@@ -213,7 +213,7 @@ There are two steps:
 
 1. Edit this README file to contain the RUM query you created above right here:
     ```
-    CREATE INDEX ...
+    CREATE INDEX on metahtml using rum(content);
     ```
 
 1. Edit this README file with the results of the following queries in psql.
@@ -303,7 +303,7 @@ There are two steps:
          11 |            11 |       11 | com,discountmags)
          10 |            10 |       10 | net,slideshare)
          10 |            10 |       10 | vn,soha,tratu)
-            13 |            13 |       10 | com,yahoo,buy,tw)
+         13 |            13 |       10 | com,yahoo,buy,tw)
          10 |            10 |       10 | com,foxnews)
          10 |            10 |       10 | de,focus)
          10 |            10 |       10 | com,elsevier,pure,minnesota-staging)
@@ -327,22 +327,22 @@ There are two steps:
          10 |            10 |       10 | nl,2miljoen)
          10 |            10 |       10 | com,olympics)
          10 |            10 |       10 | com,123rf,de)
-            9 |             9 |        9 | de,gewusst-wo)
-            9 |             9 |        9 | pl,rynekzdrowia)
-            9 |             9 |        9 | jp,sakenomy)
-            9 |             9 |        9 | com,tradingsat)
-            9 |             9 |        9 | org,gnbdc)
-            9 |             9 |        9 | nl,graftombe)
-            9 |             9 |        9 | com,wsj,cn)
-            9 |             9 |        9 | com,secondlife,maps)
-            9 |             9 |        9 | com,haribhoomi)
-            9 |             9 |        9 | ru,org,linux)
-            9 |             9 |        9 | com,tribuna,ua)
+          9 |             9 |        9 | de,gewusst-wo)
+          9 |             9 |        9 | pl,rynekzdrowia)
+          9 |             9 |        9 | jp,sakenomy)
+          9 |             9 |        9 | com,tradingsat)
+          9 |             9 |        9 | org,gnbdc)
+          9 |             9 |        9 | nl,graftombe)
+          9 |             9 |        9 | com,wsj,cn)
+          9 |             9 |        9 | com,secondlife,maps)
+          9 |             9 |        9 | com,haribhoomi)
+          9 |             9 |        9 | ru,org,linux)
+          9 |             9 |        9 | com,tribuna,ua)
          11 |            11 |        9 | org,un,unstats)
-            9 |             9 |        9 | com,steampowered,help)
-            9 |             9 |        9 | edu,ucsd,can,supersearch)
-            9 |             9 |        9 | edu,ncsu,lib,staff)
-            9 |             9 |        9 | jp,co,p1mode)
+          9 |             9 |        9 | com,steampowered,help)
+          9 |             9 |        9 | edu,ucsd,can,supersearch)
+          9 |             9 |        9 | edu,ncsu,lib,staff)
+          9 |             9 |        9 | jp,co,p1mode)
          10 |            10 |        9 | com,etsy)
          (100 rows)
        ```
