@@ -1,6 +1,6 @@
 set -e
 
-host='localhost:5000'
+host='localhost:1176'
 
 routes="
 /
@@ -18,12 +18,12 @@ for route in $routes; do
 
     if curl -s --fail "http://$host/$route" > /dev/null; then
         echo '[pass]   '
-    else
-        echo '[fail]   '
-        failed=true
-    fi
-done
+                            else
+                                        echo '[fail]   '
+                                                failed=true
+                                                    fi
+                                                done
 
-if [ "$failed" = true ]; then
-    exit 1
-fi
+                                                if [ "$failed" = true ]; then
+                                                        exit 1
+                                                    fi
